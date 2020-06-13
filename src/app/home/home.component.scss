@@ -1,0 +1,33 @@
+.backgroundContainer {
+    background: url("/assets/images/b8.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+#borderCircle {
+    height: 300px;
+    width: 300px;
+    // background-color: white;
+    border-radius: 50%;
+    background: rgba(204, 204, 204, 0.5);
+}
+
+#profilePicHome {
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+    height: 275px;
+    width: 275px;
+    background-color: white;
+    border-radius: 50%;
+    background: url("/assets/images/professionalProfilePic.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+#nameTextHome {
+    font-size: 40px;
+}
+
+#postTextHome {
+    font-size: 20px;
+}

@@ -3,13 +3,11 @@
 @import '~@angular/material/theming';
 @import "~material-design-icons/iconfont/material-icons.css";
 
-@import '../node_modules/font-awesome/css/font-awesome.css';
-
 @include mat-core();
 
-$my-app-primary: mat-palette($mat-blue);
-$my-app-light: mat-palette($mat-light-blue);
-$my-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$my-app-primary: mat-palette($mat-grey, 800);
+$my-app-light: mat-palette($mat-grey, 300);
+$my-app-accent: mat-palette($mat-cyan, A200, A100, A400);
 //$my-app-accent:  mat-palette($mat-pink, A200, A100, A400);
 
 $my-app-warn:    mat-palette($mat-red);
@@ -18,12 +16,12 @@ $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
 @include angular-material-theme($my-app-theme);
 
-$primary-color-dark: #1565c0;
-$primary-color-light: #64b5f6;
-$primary-color: #1e88e5;
+$primary-color-dark: #000000;
+$primary-color-light: #e0e0e0;
+$primary-color: #424242;
 $success: #4caf50;
 $faint-color: #e3f2fd;
-$accent-color: #e91e63;
+$accent-color: #26c6da;
 $disable-color: #757575;
 $special-btn-color: #673ab7;
 $special-icon-color: #ffea00;

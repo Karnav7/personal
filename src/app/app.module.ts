@@ -15,22 +15,31 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
-
+import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RestangularModule, Restangular } from 'ngx-restangular';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // import { RestangularConfigFactory } from './shared/restConfig';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +49,10 @@ import { AppComponent } from './app.component';
     HttpModule,
     HttpClientModule,
     MatButtonModule, MatCardModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatSnackBarModule,
-    MatIconModule, MatExpansionModule, MatCheckboxModule, MatSidenavModule,
+    MatIconModule, MatExpansionModule, MatCheckboxModule, MatSidenavModule, MatListModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
