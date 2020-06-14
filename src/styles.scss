@@ -5,22 +5,22 @@
 
 @include mat-core();
 
-$my-app-primary: mat-palette($mat-grey, 800);
-$my-app-light: mat-palette($mat-grey, 300);
+$my-app-primary: mat-palette($mat-grey);
+// $my-app-light: mat-palette($mat-grey, 300);
 $my-app-accent: mat-palette($mat-cyan, A200, A100, A400);
 //$my-app-accent:  mat-palette($mat-pink, A200, A100, A400);
 
 $my-app-warn:    mat-palette($mat-red);
 
-$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+$my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
 @include angular-material-theme($my-app-theme);
 
 $primary-color-dark: #000000;
-$primary-color-light: #e0e0e0;
+$primary-color-light: #616161;
 $primary-color: #424242;
 $success: #4caf50;
-$faint-color: #e3f2fd;
+$faint-color: #e0e0e0;
 $accent-color: #26c6da;
 $disable-color: #757575;
 $special-btn-color: #673ab7;
@@ -93,6 +93,21 @@ body {
     @media (min-width: 481px) and (max-width: 823px) and (orientation:landscape) {
         padding-bottom: 25%;
     }
+}
+
+.basicContainer {
+    height: 100vh;
+    overflow: auto;
+    background-color: $primary-color-light;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#headingInitial {
+    height: 40px;
+    width: 5px;
+    background-color: $accent-color;
 }
 
 .background-primary {
