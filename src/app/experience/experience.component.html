@@ -1,12 +1,12 @@
-<div class="basicContainer" fxLayout="column" fxLayoutAlign="top center" fxLayoutGap="10px">
+<div [@fadeIn]="'in'" class="basicContainer" fxLayout="column" fxLayoutAlign="top center" fxLayoutGap="10px">
 
     <div style="width: 100%;" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
         <div id="headingInitial"></div>
         <h1>WORK EXPERIENCE</h1>
     </div>
 
-    <div style="width: 100%;" fxLayout="row" fxLayoutAlign="center top" fxLayoutGap="10px">
-        <mat-card color="primary" fxFlex="50">
+    <div style="width: 100%;" fxLayout.md="row" fxLayoutAlign.md="center top" fxLayout.gt-md="row" fxLayoutAlign.gt-md="center top" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" fxLayoutGap="10px">
+        <mat-card color="primary" fxFlex.gt-md="50" fxFlex.md="50">
             <mat-card-title>
                 NearLaw
             </mat-card-title>
@@ -57,7 +57,7 @@
             </mat-card-content>
         </mat-card>
 
-        <mat-card color="primary" fxFlex="50">
+        <mat-card color="primary" fxFlex.gt-md="50" fxFlex.md="50">
             <mat-card-title>Rajkamal Barscans Pvt. Ltd.</mat-card-title>
             <mat-card-content>
                 <div fxLayout="column" fxLayoutAlign="top">

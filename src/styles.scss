@@ -110,6 +110,10 @@ body {
     background-color: $accent-color;
 }
 
+.flex-spacer {
+    flex: 1 1 auto;
+}
+
 .background-primary {
     background-color: $primary-color;
 }
@@ -390,3 +394,62 @@ strong{
 .rounded-corners {
     border-radius: 25px;
 }
+
+// Hover animations
+//grow
+.hvr-grow {
+    // display: inline-block;
+    // &.grow {
+    //     transition: all .2s ease-in-out;
+
+    //     &:hover {
+    //         transform: scale(1.5);
+    //     }
+    // }
+}
+
+.hvr-grow:hover {
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+    span {
+        color: $accent-color!important;
+    }
+    fa-icon {
+        color: $accent-color!important;
+    }
+}
+
+//ends here
+
+// router link active style
+.router-link-active {
+    background-color: $primary-color-light!important;
+    span {
+        color: $accent-color!important;
+    }
+
+    
+}
+.router-link-active .nav-text-header {
+    display: inline-block;
+    height: 5px;
+    width: 25px;
+    align-self: center;
+    margin-left: 5px;
+    background-color: $accent-color!important;
+        
+}
+// ends here
+
+.nav-text-header {
+    display: none;
+    width: 0px;
+    height: 5px;
+    -webkit-transition: width 2s ease-in-out;
+    -moz-transition:width 2s ease-in-out;
+    -o-transition:width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+}
+
+

@@ -1,17 +1,17 @@
-<div class="basicContainer" fxLayout="column" fxLayoutAlign="top center" fxLayoutGap="10px">
+<div class="basicContainer" [@fadeIn]="'in'" fxLayout="column" fxLayoutAlign="top center" fxLayoutGap="20px">
 
     <div style="width: 100%;" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
         <div id="headingInitial"></div>
         <h1>ABOUT ME</h1>
     </div>
 
-    <div style="width: 100%;" fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+    <div style="width: 100%;" fxLayout.md="row" fxLayoutAlign.md="space-evenly center" fxLayout.gt-md="row" fxLayoutAlign.gt-md="space-evenly center" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" fxLayoutGap="10px">
 
         <div >
             <div id="profileContainerAbout"></div>
         </div>
 
-        <mat-card style="width: 40%;">
+        <mat-card fxFlex.md="40" fxFlex.gt-md="40" fxFlex.lt-md="100">
             <mat-card-title>
                 Get to know me..
             </mat-card-title>
@@ -32,6 +32,92 @@
             </mat-card-content>
         </mat-card>
     </div>
-    
+
+    <div style="width: 100%;" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <mat-card fxFlex.md="60" fxFlex.gt-md="60" fxFlex.lt-md="100">
+            <mat-card-title>Skills</mat-card-title>
+
+            <mat-card-content>
+                <ul>
+                    <li>
+                        <div fxLayout="column">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <strong>Angular 2+</strong>
+                                <span class="flex-spacer"></span>
+                                90%
+                            </div>
+                            <mat-progress-bar mode="determinate" value="90" color="accent"></mat-progress-bar>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div fxLayout="column">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <strong>Node.JS</strong>
+                                <span class="flex-spacer"></span>
+                                90%
+                            </div>
+                            <mat-progress-bar mode="determinate" value="90" color="accent"></mat-progress-bar>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div fxLayout="column">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <strong>MongoDb</strong>
+                                <span class="flex-spacer"></span>
+                                90%
+                            </div>
+                            <mat-progress-bar mode="determinate" value="90" color="accent"></mat-progress-bar>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div fxLayout="column">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <strong>MySQL</strong>
+                                <span class="flex-spacer"></span>
+                                90%
+                            </div>
+                            <mat-progress-bar mode="determinate" value="90" color="accent"></mat-progress-bar>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div fxLayout="column">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <strong>Data Structures</strong>
+                                <span class="flex-spacer"></span>
+                                95%
+                            </div>
+                            <mat-progress-bar mode="determinate" value="95" color="accent"></mat-progress-bar>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div fxLayout="column">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <strong>Core Java</strong>
+                                <span class="flex-spacer"></span>
+                                90%
+                            </div>
+                            <mat-progress-bar mode="determinate" value="90" color="accent"></mat-progress-bar>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div fxLayout="column">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <strong>Blockchain</strong>
+                                <span class="flex-spacer"></span>
+                                60%
+                            </div>
+                            <mat-progress-bar mode="determinate" value="60" color="accent"></mat-progress-bar>
+                        </div>
+                    </li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
 
 </div>
