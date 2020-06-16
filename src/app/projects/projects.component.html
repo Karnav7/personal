@@ -73,5 +73,26 @@
         </mat-card>
     </div> 
        
-
+    <div style="width: 100%;" fxLayout.md="row" fxLayoutAlign.md="center top" fxLayout.gt-md="row" fxLayoutAlign.gt-md="center top" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" fxLayoutGap="10px">
+        <mat-card fxFlex.md="33" fxFlex.gt-md="33" fxFlex.lt-md="100">
+            <mat-card-title>
+                Personal Website
+            </mat-card-title>
+    
+            <mat-card-content>
+                <span>
+                    <strong>Description: </strong> This is a my personal website.
+                </span><br>
+                <span>
+                    <strong>Technologies: </strong> Angular 9
+                </span><br><br>
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <a mat-raised-button href="https://github.com/Karnav7/Wallet" target="_blank" color="accent">
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                        Github Link
+                    </a>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </div>
