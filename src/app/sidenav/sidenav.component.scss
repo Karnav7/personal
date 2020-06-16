@@ -1,0 +1,101 @@
+.example-container {
+    width: 100%;
+    height: 100vh;
+    
+  }
+
+#nameContainer {
+  height: 100px;
+}
+
+#drawerDesktop {
+  
+
+  @media screen and (min-width: 768px) and (orientation: portrait){
+    width: 150px;
+  }
+
+  @media screen and (min-width: 1024px) and (orientation: landscape){
+    width: 150px;
+  }
+
+  @media (min-width: 200px) and (max-width: 767px) and (orientation: portrait) {
+    width: 80%;
+  }
+
+  @media (min-width: 200px) and (max-width: 1023px) and (orientation: landscape) {
+    width: 80%;
+  }
+
+}
+
+#drawerMobile {
+  width: 85%;
+
+  
+}
+
+// #dcDesktop {
+//   @media screen and (min-width: 768px) and (orientation: portrait){
+//     display: block;
+//   }
+
+//   @media screen and (min-width: 1024px) and (orientation: landscape){
+//     display: block;
+//   }
+
+//   @media (min-width: 200px) and (max-width: 767px) and (orientation: portrait) {
+//     display: none;
+//   }
+
+//   @media (min-width: 200px) and (max-width: 1023px) and (orientation: landscape) {
+//     display: none;
+//   }
+
+// }
+
+#dcMobile {
+  @media screen and (min-width: 768px) and (orientation: portrait){
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) and (orientation: landscape){
+    display: none;
+  }
+
+  @media (min-width: 200px) and (max-width: 767px) and (orientation: portrait) {
+    display: block;
+  }
+
+  @media (min-width: 200px) and (max-width: 1023px) and (orientation: landscape) {
+    display: block;
+  }
+}
+
+#backBtn {
+  z-index: 7;
+  position: absolute;
+  top: 95px;
+  
+
+  @media screen and (min-width: 768px) and (orientation: portrait){
+    left: 110px;
+  }
+
+  @media screen and (min-width: 1024px) and (orientation: landscape){
+    left: 110px;
+  }
+
+  @media (min-width: 200px) and (max-width: 767px) and (orientation: portrait) {
+    left: 86%;
+  }
+
+  @media (min-width: 200px) and (max-width: 1023px) and (orientation: landscape) {
+    left: 86%;
+  }
+}
+
+#navFooter {
+    bottom: 10px;
+    position: absolute;
+}

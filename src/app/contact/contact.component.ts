@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faTwitter, faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+import { SidenavServiceService } from '../services/sidenav-service.service';
 
 @Component({
   selector: 'app-contact',
@@ -24,9 +25,18 @@ export class ContactComponent implements OnInit {
   faLinkedin = faLinkedin;
   faEnvelope = faEnvelope;
 
-  constructor() { }
+  constructor(
+    private sidenavService: SidenavServiceService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  openSideNav() {
+    
+    this.sidenavService.open();
+    
+    // this.hideMenuBtnService.hideBtn();
   }
 
 }

@@ -1,0 +1,55 @@
+<mat-drawer-container id="dcDesktop" class="example-container" [hasBackdrop]="false">
+    <mat-drawer id="drawerDesktop" #navbar class="background-primary-dark" mode="side" [opened]="true">
+      <!-- <p>Hello</p> -->
+      <div style="width: 100%;" fxLayout="column" fxLayoutAlign="top center" fxLayoutGap="5px">
+        <div style="width: 100%;" id="nameContainer" fxLayout="row" fxLayoutAlign="center center">
+          <span style="font-size: 20px;"><strong>Karnav Shah</strong></span>
+          
+        </div>
+        <hr style="width: 100%;">
+        <button mat-mini-fab id="backBtn" color="accent" matTooltip="close" (click)="closeSideNav()">
+          <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <mat-nav-list style="width: 100%;" fxLayoutGap="1px">
+          <!-- <div style="height: 48px;" mat-list-item fxLayout="row" fxLayoutAlign="start center"> -->
+            <a class="hvr-grow" style="width:inherit;" fxLayout="row" mat-list-item routerLink="home" routerLinkActive="router-link-active" (click)="navbar.close()">
+              <span class="text-floral-white">Home</span> <div class="nav-text-header"></div>
+            </a>
+          <!-- </div> -->
+          
+          <a class="hvr-grow" style="width:inherit;" fxLayout="row" mat-list-item routerLink="experience" routerLinkActive="router-link-active" (click)="navbar.close()">
+            <span class="text-floral-white">Experience</span> <div class="nav-text-header"></div>
+          </a>
+          <a class="hvr-grow" style="width:inherit;" fxLayout="row" mat-list-item routerLink="projects" routerLinkActive="router-link-active" (click)="navbar.close()">
+            <span class="text-floral-white">Projects</span> <div class="nav-text-header"></div>
+          </a>
+          <a class="hvr-grow" style="width:inherit;" fxLayout="row" mat-list-item routerLink="about" routerLinkActive="router-link-active" (click)="navbar.close()">
+            <span class="text-floral-white">About</span> <div class="nav-text-header"></div>
+          </a>
+          <a class="hvr-grow" style="width:inherit;" fxLayout="row" mat-list-item routerLink="contact" routerLinkActive="router-link-active" (click)="navbar.close()">
+            <span class="text-floral-white">Contact</span> <div class="nav-text-header"></div>
+          </a>
+        </mat-nav-list>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign="2px">
+          <a class="hvr-grow" mat-icon-button href="https://www.linkedin.com/in/karnav" target="_blank" matTooltip="LinkedIn">
+            <fa-icon class="text-floral-white" style="font-size: 25px;" [icon]="faLinkedin"></fa-icon>
+          </a>
+          <a class="hvr-grow" mat-icon-button href="https://www.github.com/Karnav7" target="_blank" matTooltip="Github">
+            <fa-icon class="text-floral-white" style="font-size: 25px;" [icon]="faGithub"></fa-icon>
+          </a>
+        </div>
+        <span class="flex-spacer"></span>
+        <div id="navFooter" style="width: 100%;" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px">
+            <span>Made with</span><mat-icon color="warn">favorite</mat-icon>
+        </div>
+         
+      </div>
+    </mat-drawer>
+  
+    
+  
+    <mat-drawer-content>
+  
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>

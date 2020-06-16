@@ -1,54 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import { faTwitter, faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+import { Component, ViewChild, AfterViewInit, ViewChildren } from '@angular/core';
+
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [
-    // trigger('slideRightNavTxtHeader', [
-    //   state('initial', style({width: '0px', display: 'none'})),
-    //   state('final', style({width: '25px'})),
-    //   transition('void => final', animate('500ms ease-in')),
-    //   transition(':enter', [
-    //     style({width: '0px'}),
-    //     animate(500)
-    //   ]),
-    //   transition('initial=>final', [
-    //     // style({width: '0px'}),
-    //     animate(500)
-    //   ]),
-    //   // transition('final=>initial', [
-    //   //   animate(500)
-    //   // ])
-    // ]),
-    trigger('fadeIn', [
-      state('in', style({opacity: 0})),
-
-      transition(':enter', [
-        style({opacity: 0}),
-        animate(600)
-      ])
-    ])
-  ]
+ 
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'Frontend';
-  faLinkedin = faLinkedin;
-  faGithub = faGithub;
-
+  
   // homeState: string = 'initial';
   // experienceState: string = 'initial';
   // contactState: string = 'initial';
   // aboutState: string = 'initial';
   // projectsState: string = 'initial';
 
-  ngOnInit(): void {
+  constructor() {}
+
+  ngAfterViewInit() {
     // this.homeState = 'final';
     // console.log(this.homeState);
+
+    // this.opened = this.homeOpen;
   }
+
+  
+
+
 
   // animateSlideRightNavTxtHeaderHome() {
    

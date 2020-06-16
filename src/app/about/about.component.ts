@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+import { SidenavServiceService } from '../services/sidenav-service.service';
 
 @Component({
   selector: 'app-about',
@@ -18,9 +19,18 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private sidenavService: SidenavServiceService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  openSideNav() {
+    
+    this.sidenavService.open();
+    
+    // this.hideMenuBtnService.hideBtn();
   }
 
 }

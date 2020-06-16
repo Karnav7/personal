@@ -18,6 +18,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -33,6 +34,10 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+
+import { SidenavServiceService } from './services/sidenav-service.service';
+import { HideMenuBtnService } from './services/hide-menu-btn.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +46,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ProjectsComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -50,13 +56,13 @@ import { ContactComponent } from './contact/contact.component';
     FormsModule,
     HttpModule,
     HttpClientModule,
-    MatButtonModule, MatCardModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatSnackBarModule,
+    MatButtonModule, MatCardModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatSnackBarModule, MatTooltipModule,
     MatIconModule, MatExpansionModule, MatCheckboxModule, MatSidenavModule, MatListModule, MatProgressBarModule,
     FlexLayoutModule,
     ReactiveFormsModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [SidenavServiceService, HideMenuBtnService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

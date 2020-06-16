@@ -11,6 +11,7 @@
     // background-color: white;
     border-radius: 50%;
     background: rgba(204, 204, 204, 0.5);
+    box-shadow: 0 8px 6px -6px black;
 }
 
 #profilePicHome {
@@ -26,8 +27,17 @@
 
 #nameTextHome {
     font-size: 40px;
+    text-shadow: 2px 2px #424242;
 }
 
 #postTextHome {
     font-size: 20px;
+    text-shadow: 2px 2px #424242;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+#menubtn {
+    top: 10px;
+    left: 10px;
+    position: absolute;
 }

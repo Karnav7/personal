@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faTwitter, faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+import { SidenavServiceService } from '../services/sidenav-service.service';
 
 @Component({
   selector: 'app-projects',
@@ -21,9 +22,18 @@ export class ProjectsComponent implements OnInit {
 
   faGithub = faGithub;
 
-  constructor() { }
+  constructor(
+    private sidenavService: SidenavServiceService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  openSideNav() {
+    
+    this.sidenavService.open();
+    
+    // this.hideMenuBtnService.hideBtn();
   }
 
 }

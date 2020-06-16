@@ -1,6 +1,9 @@
 <div [@fadeIn]="'in'" class="basicContainer" fxLayout="column" fxLayoutAlign="top center" fxLayoutGap="10px">
 
     <div style="width: 100%;" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+        <button mat-mini-fab id="menubtn" #menubtn color="accent" matTooltip="menu" (click)="openSideNav()">
+            <mat-icon>menu</mat-icon>
+        </button>
         <div id="headingInitial"></div>
         <h1>WORK EXPERIENCE</h1>
     </div>

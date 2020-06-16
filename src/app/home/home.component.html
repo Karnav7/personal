@@ -1,5 +1,8 @@
 <div [@fadeIn]="'in'" class="backgroundContainer" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
     <!-- <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1px"> -->
+        <button mat-mini-fab id="menubtn" #menubtn color="accent" matTooltip="menu" (click)="openSideNav()">
+            <mat-icon>menu</mat-icon>
+        </button>
         <div id="borderCircle">
             <div id="profilePicHome">
 
