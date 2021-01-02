@@ -1,0 +1,31 @@
+// .mobileFullWidth {
+//     @media (min-width: 200px) and (max-width: 480px) and (orientation: portrait) {
+//         width: 10px;
+//     }
+
+//     @media (min-width: 481px) and (max-width: 823px) and (orientation:landscape) {
+//         width: 10%;
+//     }
+// }
+
+.portraitDisplay {
+    @media screen and (min-width: 1225px){
+        width: 100%;
+    }
+
+    @media (min-width: 481px) and (max-width: 900px) and (orientation: portrait) {
+        width: 100%;
+    }
+
+    @media (min-width: 824px) and (max-width: 1024px) and (orientation: landscape) {
+        width: 100%;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+        width: 100%;
+    }
+
+    @media (min-width: 481px) and (max-width: 823px) and (orientation:landscape) {
+        width: 100%;
+    }
+}

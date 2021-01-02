@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit {
   // @Output() openedOutput = new EventEmitter<boolean>();
 
   ngOnInit(): void {
+    // this.openSideNav();
   }
 
   ngAfterViewInit() {

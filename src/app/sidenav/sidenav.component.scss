@@ -1,7 +1,8 @@
 .example-container {
     width: 100%;
-    height: 100vh;
-    
+    height: 100%;
+    overflow-y: auto;
+
   }
 
 #nameContainer {
@@ -9,7 +10,8 @@
 }
 
 #drawerDesktop {
-  
+  overflow-y: auto;
+  overflow-x: hidden;
 
   @media screen and (min-width: 768px) and (orientation: portrait){
     width: 150px;
@@ -24,7 +26,7 @@
   }
 
   @media (min-width: 200px) and (max-width: 1023px) and (orientation: landscape) {
-    width: 80%;
+    width: 35%;
   }
 
 }

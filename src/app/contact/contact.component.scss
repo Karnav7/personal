@@ -1,11 +1,30 @@
 #contactBgContainer {
     width: 100%;
-    height: 60%;
     background: url("/assets/images/b3.jpg")no-repeat center center;
     background-size: cover;
     -moz-box-shadow:    3px 3px 5px 6px #424242;
     -webkit-box-shadow: 3px 3px 5px 6px #424242;
     box-shadow:         3px 3px 5px 6px #424242;
+
+    @media screen and (min-width: 1225px){
+        height: 100%;
+    }
+
+    @media (min-width: 481px) and (max-width: 900px) and (orientation: portrait) {
+        height: 100%;
+    }
+
+    @media (min-width: 824px) and (max-width: 1224px) and (orientation: landscape) {
+        height: 560px;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+        height: 600px;
+    }
+
+    @media (min-width: 481px) and (max-width: 823px) and (orientation:landscape) {
+        height: 220px;
+    }
 }
 
 #menubtn {
